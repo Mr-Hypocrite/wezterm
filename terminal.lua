@@ -44,6 +44,11 @@ function M.options(config)
 	config.allow_win32_input_mode = true
 	config.disable_default_key_bindings = true
 
+	config.colors = {
+		tab_bar = {
+			background = M.colors.transparent,
+		},
+	}
 	config.window_background_opacity = 0.75
 	config.macos_window_background_blur = 0
 end
