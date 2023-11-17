@@ -18,7 +18,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-terminal.options(config, wezterm)
+terminal.options(config)
 keymaps.options(config)
 ssh.options(config)
 update_right_status.init(wezterm, terminal)
