@@ -47,6 +47,10 @@ function M.options(config)
 	config.colors = {
 		tab_bar = {
 			background = M.colors.transparent,
+			inactive_tab = {
+				bg_color = M.colors.transparent,
+				fg_color = "#c0c0c0",
+			},
 		},
 	}
 	config.window_background_opacity = 0.75
