@@ -24,6 +24,7 @@ ssh.options(config)
 update_right_status.init(wezterm, terminal)
 
 -- This is where you actually apply your config choices
+config.default_domain = 'WSL:Ubuntu-22.04'
 
 -- and finally, return the configuration to wezterm
 return config
