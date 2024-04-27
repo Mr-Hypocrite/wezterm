@@ -50,6 +50,7 @@ function M.options(config)
 	config.keys = {
 		{ key = "a", mods = "LEADER|CTRL", action = wezterm.action({ SendString = "\x01" }) },
 		{ key = "-", mods = "LEADER", action = wezterm.action({ SplitVertical = { domain = "CurrentPaneDomain" } }) },
+		{ key = 'V', mods = 'CTRL', action = act.PasteFrom 'Clipboard' },
 		{
 			key = "\\",
 			mods = "LEADER",
@@ -72,6 +73,7 @@ function M.options(config)
 		split_nav("resize", "h"),
 		split_nav("resize", "j"),
 		split_nav("resize", "k"),
+		split_nav("resize", "l"),
 		{
 			key = ",",
 			mods = "LEADER",
@@ -87,7 +89,6 @@ function M.options(config)
 				end),
 			}),
 		},
-		split_nav("resize", "l"),
 	}
 
 	for i = 1, 8 do
